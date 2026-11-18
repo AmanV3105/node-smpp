@@ -1,0 +1,29 @@
+{
+  "name": "smpp",
+  "version": "0.6.0-rc.4",
+  "description": "SMPP client and server implementation in node.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "main": "./lib/smpp",
+  "license": "MIT",
+  "files": [
+    "lib/",
+    "index.js"
+  ],
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test_coverage": "nyc --reporter=text mocha",
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "mocha": "^11.8.0",
+    "nyc": "^17.1.0"
+  },
+  "dependencies": {
+    "findhit-proxywrap": "^0.3.12",
+    "iconv-lite": "0.x",
+    "safer-buffer": ">= 2.1.2 < 3"
+  }
+}
